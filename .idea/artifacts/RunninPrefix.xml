@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="RunninPrefix">
+    <output-path>$USER_HOME$/Desktop/runninTestin/plugins</output-path>
+    <root id="archive" name="RunninPrefix.jar">
+      <element id="module-output" name="Prefix" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/runninTestin/spigot.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
