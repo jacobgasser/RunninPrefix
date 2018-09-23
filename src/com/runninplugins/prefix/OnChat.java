@@ -11,6 +11,5 @@ public class OnChat implements Listener {
         Player player = event.getPlayer();
         event.setCancelled(true);
         player.sendMessage(User.getUsers() + "");
-        player.sendMessage(User.getUserByPlayer(player).getDisplayName());
     }
 }
