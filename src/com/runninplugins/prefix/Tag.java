@@ -1,6 +1,7 @@
 package com.runninplugins.prefix;
 
 import org.bukkit.ChatColor;
+import org.bukkit.configuration.file.FileConfiguration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,10 +18,10 @@ public class Tag {
         this.isHoverable = isHoverable;
         this.hoverContent = hoverContent;
         tags.add(this);
+        writeTag(this);
     }
-    public String getTagName() {
-        return tagName;
-    }
+
+
     public List<Tag> getTags() {
         return tags;
     }
@@ -32,6 +33,19 @@ public class Tag {
         }
         return null;
     }
+
+    public void writeTag(Tag tag) {
+        FileConfiguration config = Main.getMain().getConfig();
+        String name = tag.getTagName();
+        config.set(name + ".content", getContent());
+        config.set(name + ".hoverContent", getHoverContent());
+        config.set(name + ".isHoverable", getIsHoverable());
+        Main.getMain().saveConfig();
+    }
+    public String getTagName() { return tagName;}
+    public String getContent(){ return this.content;}
+    public String getHoverContent(){ return this.hoverContent;}
+    public boolean getIsHoverable(){ return this.isHoverable;}
 }
 
 
