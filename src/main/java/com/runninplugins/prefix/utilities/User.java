@@ -1,4 +1,4 @@
-package com.runninplugins.prefix;
+package com.runninplugins.prefix.utilities;
 
 import org.bukkit.entity.Player;
 

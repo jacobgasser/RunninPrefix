@@ -1,6 +1,6 @@
-package com.runninplugins.prefix;
+package com.runninplugins.prefix.utilities;
 
-import org.bukkit.ChatColor;
+import com.runninplugins.prefix.Main;
 import org.bukkit.configuration.file.FileConfiguration;
 
 import java.util.ArrayList;
