@@ -1,5 +1,6 @@
-package com.runninplugins.prefix;
+package com.runninplugins.prefix.events;
 
+import com.runninplugins.prefix.utilities.User;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
