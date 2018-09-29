@@ -14,8 +14,8 @@ public class NewPrefix extends BukkitCommand {
         super("NewPrefix");
         ArrayList<String> aliases = new ArrayList<>();
         aliases.add("newprefix");
-        this.description = "Set the prefix of a player ";
-        this.usageMessage = "/SetPrefix <player> <prefix>";
+        this.description = "Create a prefix for a player ";
+        this.usageMessage = "/NewPrefix <prefix>";
 
         this.setPermission("prefix");
         this.setAliases(aliases);
