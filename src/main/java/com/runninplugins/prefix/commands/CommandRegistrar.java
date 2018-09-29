@@ -19,6 +19,10 @@ public class CommandRegistrar {
         } catch(Exception e) {
             e.printStackTrace();
         }
-
     }
+
+
+
+
+
 }
